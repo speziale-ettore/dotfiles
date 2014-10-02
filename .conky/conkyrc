@@ -111,8 +111,6 @@ ${color d7d7d7}${offset 100}${voffset 36}${cpugraph cpu6 17,1}${voffset -3}${hr 
 ${offset 170}${font neuropol:size=20}$memperc% ${font Nimbus Mono L:size=8 style=bold} Ram
 ${offset 170}${voffset -5}${cpubar cpu6 0, 110}${voffset 2}${color1}
 ${offset 170}root   ${fs_free /} / ${fs_size /}
-${offset 170}boot   ${fs_free /boot} / ${fs_size /boot}
-${offset 170}usr    ${fs_free /usr} / ${fs_size /usr}
 ${offset 170}var    ${fs_free /var} / ${fs_size /var}
 ${offset 170}home   ${fs_free /home} / ${fs_size /home}
 ${offset 170}tHD    ${hddtemp /dev/sda}°C
