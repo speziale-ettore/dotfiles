@@ -23,6 +23,9 @@ if [ $? -eq 0 ]; then
     fbautostart
 fi
 
+# Set wallpaper.
+fbsetbg ~/Pictures/wallpaper/saturn.jpg
+
 # Dropbox.
 dropbox start &
 
