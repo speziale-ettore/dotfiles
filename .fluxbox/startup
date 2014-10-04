@@ -32,7 +32,7 @@ dropbox start &
 # Embedded terminal.
 urxvt -name surxvt \
       -fn xft:"Nimbus Mono L" \
-      +sb \
+      +sb -tr -rv \
       -geometry 80x36+10+60 &
 
 # Conky needs to wait some time before start ...
