@@ -23,11 +23,20 @@ if [ $? -eq 0 ]; then
     fbautostart
 fi
 
-# And last but not least we start fluxbox.
-# Because it is the last app you have to run it with ''exec'' before it.
+# Dropbox.
+dropbox start &
+
+# Embedded terminal.
+urxvt -name surxvt \
+      -fn xft:"Nimbus Mono L" \
+      +sb \
+      -geometry 80x36+10+60 &
 
 # Conky needs to wait some time before start ...
 sleep 1 && conky &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
 
 exec fluxbox
 # or if you want to keep a log:
