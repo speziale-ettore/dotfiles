@@ -1,0 +1,22 @@
+[user]
+	name = Ettore Speziale
+	email = speziale.ettore@gmail.com
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+
+[core]
+	pager = less -FRSX
+	editor = vim
+
+[merge]
+	tool = vimdiff
+
+[mergetool]
+	keepBackup = false
+
+[difftool]
+	prompt = false
