@@ -12,11 +12,14 @@
 	pager = less -FRSX
 	editor = vim
 
+[difftool]
+	prompt = false
+
 [merge]
 	tool = vimdiff
 
 [mergetool]
 	keepBackup = false
 
-[difftool]
-	prompt = false
+[push]
+	default = simple
