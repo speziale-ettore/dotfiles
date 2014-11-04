@@ -22,4 +22,4 @@
 	keepBackup = false
 
 [push]
-	default = simple
+	default = upstream
