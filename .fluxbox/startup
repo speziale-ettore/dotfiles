@@ -33,7 +33,7 @@ dropbox start &
 urxvt -name surxvt \
       -fn xft:"Nimbus Mono L" \
       +sb -tr -rv \
-      -geometry 80x36+10+60 &
+      -geometry 90x36+10+60 &
 
 # Conky needs to wait some time before start ...
 sleep 1 && conky &
