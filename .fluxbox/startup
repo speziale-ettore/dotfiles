@@ -29,11 +29,18 @@ fbsetbg ~/Pictures/wallpaper/saturn.jpg
 # Dropbox.
 dropbox start &
 
-# Embedded terminal.
+# Embedded general purpose terminal.
 urxvt -name surxvt \
       -fn xft:"Nimbus Mono L" \
       +sb -tr -rv \
       -geometry 90x36+10+60 &
+
+# Embedded mutt terminal.
+urxvt -name smutt \
+      -fn xft:"Nimbus Mono L" \
+      +sb -tr -rv \
+      -geometry 90x36+10+60 \
+      -cd $HOME/Downloads -e mutt &
 
 # Conky needs to wait some time before start ...
 sleep 1 && conky &

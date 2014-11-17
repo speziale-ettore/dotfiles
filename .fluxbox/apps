@@ -3,11 +3,20 @@
   [Layer]	{2}
 [end]
 
-[app] (name=surxvt)
+[app] (name=smutt)
   [Hidden]	{yes}
   [Layer]	{Desktop}
   [Deco]	{NONE}
   [Tab]	{No}
   [FocusedNewWindow]	{yes}
   [Workspace]	{0}
+[end]
+
+[app] (name=surxvt)
+  [Hidden]	{yes}
+  [Layer]	{Desktop}
+  [Deco]	{NONE}
+  [Tab]	{No}
+  [FocusedNewWindow]	{yes}
+  [Workspace]	{1}
 [end]
