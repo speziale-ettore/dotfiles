@@ -84,7 +84,7 @@ augroup filetype
   au! BufRead,BufNewFile *.td     set filetype=tablegen
 augroup END
 
-" Enable syntax highlighting for metla files.
+" Enable syntax highlighting for metal files.
 augroup filetype
   au! BufRead,BufNewFile *.metal  set filetype=cpp
 augroup END
@@ -95,6 +95,9 @@ augroup END
 augroup filetype
  au! BufRead,BufNewFile *.rst     set filetype=rest
 augroup END
+
+" Support for running clang-format.
+map <C-I> :pyf ~/.vim/script/clang-format.py<cr>
 
 " Additional vim features to optionally uncomment.
 set showcmd
