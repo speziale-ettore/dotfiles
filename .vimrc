@@ -84,6 +84,11 @@ augroup filetype
   au! BufRead,BufNewFile *.td     set filetype=tablegen
 augroup END
 
+" Enable syntax highlighting for metla files.
+augroup filetype
+  au! BufRead,BufNewFile *.metal  set filetype=cpp
+augroup END
+
 " Enable syntax highlighting for reStructuredText files. To use, copy
 " rest.vim (http://www.vim.org/scripts/script.php?script_id=973)
 " to ~/.vim/syntax .
