@@ -22,7 +22,7 @@ echo "done"
 # in $files
 srcs=`find $dir \( -type d -path $dir/.git -o -name '*.swp' \) \
                 -prune -o -type f -print`
-for src in srcs; do
+for src in $srcs; do
     dst=`echo -n $src | sed s\|^$HOME/Dotfiles\|$HOME\|`
     bck=`echo -n $src | sed s\|^$HOME/Dotfiles\|$olddir\|`
 
