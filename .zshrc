@@ -51,9 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-if [[ `uname -s` = "Darwin" ]]; then
-  export PATH="$HOME/Bin:$PATH"
-fi
+export PATH="$HOME/Bin:$PATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
