@@ -51,7 +51,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="$HOME/Bin:$PATH"
+case `uname` in
+"Darwin")
+  export PATH="$HOME/Bin:$PATH"
+  ;;
+"Linux")
+  export PATH="$HOME/.local/bin:$PATH"
+  ;;
+esac
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
