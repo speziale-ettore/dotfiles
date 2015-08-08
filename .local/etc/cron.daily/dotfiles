@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+test -x /usr/bin/git && git -C ${HOME}/Dotfiles pull
