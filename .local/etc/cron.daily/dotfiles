@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-
-echo "Updating ${HOME}/Dotfiles."
-test -x /usr/bin/git && git -C ${HOME}/Dotfiles pull
