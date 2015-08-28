@@ -9,7 +9,7 @@
     <array>
         <string>/bin/sh</string>
         <string>-c</string>
-        <string>test -x /usr/bin/git && git -C ${HOME}/Dotfiles pull</string>
+        <string>${HOME}/Bin/update-dotfiles.sh</string>
     </array>
     <key>StartCalendarInterval</key>
     <dict>
