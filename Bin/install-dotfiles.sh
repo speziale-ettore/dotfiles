@@ -20,8 +20,8 @@ echo "done"
 # move any existing dotfiles in homedir to DotfilesOld directory, then create
 # symlinks from the homedir to any files in the ~/Dotfiles directory specified
 # in $files
-srcs=`find $dir \( -type d -path $dir/.git -o -name '*.swp' \) \
-                -prune -o -type f -print`
+srcs=`find -L $dir \( -type d -path $dir/.git -o -name '*.swp' \) \
+                    -prune -o -type f -print`
 for src in $srcs; do
     dst=`echo -n $src | sed s\|^$HOME/Dotfiles\|$HOME\|`
     bck=`echo -n $src | sed s\|^$HOME/Dotfiles\|$olddir\|`
