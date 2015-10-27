@@ -105,3 +105,4 @@ set showmatch
 set showmode
 set incsearch
 set ruler
+set hlsearch
