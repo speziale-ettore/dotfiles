@@ -96,6 +96,9 @@ augroup filetype
  au! BufRead,BufNewFile *.rst     set filetype=rest
 augroup END
 
+" Enable spellchecking.
+set spell spelllang=en_us
+
 " Support for running clang-format.
 map <C-I> :pyf ~/.vim/script/clang-format.py<cr>
 
