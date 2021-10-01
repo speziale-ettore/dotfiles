@@ -3,5 +3,4 @@ username = Ettore Speziale <speziale.ettore@gmail.com>
 
 [extensions]
 color =
-prompt = ~/.hgext/hg-prompt/prompt.py
 purge =
