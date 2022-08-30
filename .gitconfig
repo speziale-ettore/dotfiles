@@ -12,6 +12,9 @@
 	pager = less -FRSX
 	editor = vim
 
+[diff]
+	ignoreSubmodules = all
+
 [difftool]
 	prompt = false
 
@@ -23,3 +26,9 @@
 
 [push]
 	default = upstream
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
