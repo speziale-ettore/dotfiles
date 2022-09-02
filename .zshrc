@@ -53,7 +53,7 @@ source $ZSH/oh-my-zsh.sh
 
 case `uname` in
 "Darwin")
-  export PATH="$HOME/Bin:$PATH"
+  export PATH="$HOME/Bin:/opt/homebrew/bin:/opt/homebrew/opt/sphinx-doc/bin:$PATH"
   ;;
 "Linux")
   export PATH="$HOME/.local/bin:$PATH"
